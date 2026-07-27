@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سلة المشتريات - دلتا بامب للمقاولات العامة وحفر الآبار.">
+    <title>سلة المشتريات | دلتا بامب للمقاولات العامة وحفر الآبار</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/store-catalog.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header id="main-header" class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo" id="logo">
+                    <img src="assets/images/logo.png" alt="Delta Pump Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-name" data-ar="دلتا بامب" data-en="Delta Pump">دلتا بامب</span>
+                        <span class="logo-tagline" data-ar="للمقاولات العامة وحفر الآبار" data-en="General Contracting & Well Drilling">للمقاولات العامة وحفر الآبار</span>
+                    </div>
+                </a>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                    <li><a href="about.html" class="nav-link" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                    <li>
+                        <a href="services.html" class="nav-link" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
+                    </li>
+                    <li><a href="projects.html" class="nav-link" data-ar="مشاريعنا" data-en="Projects">مشاريعنا</a></li>
+                    <li><a href="store.html" class="nav-link active" data-ar="المتجر" data-en="Store">المتجر</a></li>
+                    <li><a href="contact.html" class="nav-link" data-ar="اتصل بنا" data-en="Contact">اتصل بنا</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cart-btn" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="lang-btn" id="lang-toggle">
+                        <span class="lang-text">English</span>
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============ CART HERO BANNER ============ -->
+    <section class="store-hero">
+        <div class="store-hero-bg"></div>
+        <div class="container">
+            <div class="store-hero-content">
+                <h1 class="store-hero-title" data-ar="سلة المشتريات" data-en="Shopping Cart">سلة المشتريات</h1>
+                <p class="store-hero-subtitle" data-ar="راجع المنتجات التي اخترتها واطلب عرض سعر مباشرة من دلتا بامب" data-en="Review the products you selected and request a quote directly from Delta Pump">
+                    راجع المنتجات التي اخترتها واطلب عرض سعر مباشرة من دلتا بامب
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ BREADCRUMB ============ -->
+    <div class="breadcrumb-container">
+        <div class="container">
+            <div class="breadcrumb-bar">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+                <i class="fas fa-chevron-left breadcrumb-separator"></i>
+                <a href="store.html" data-ar="المتجر" data-en="Store">المتجر</a>
+                <i class="fas fa-chevron-left breadcrumb-separator"></i>
+                <span data-ar="سلة المشتريات" data-en="Shopping Cart">سلة المشتريات</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ CART SECTION ============ -->
+    <section class="cart-section">
+        <div class="container">
+
+            <!-- Cart with items -->
+            <div class="cart-layout" id="cart-layout" hidden>
+                <!-- Items column -->
+                <div class="cart-items-col">
+                    <div class="cart-items-header">
+                        <h2 class="cart-items-title" data-ar="منتجاتك" data-en="Your Items">منتجاتك</h2>
+                        <button class="cart-clear-btn" id="cart-clear-btn">
+                            <i class="fas fa-trash-alt"></i>
+                            <span data-ar="إفراغ السلة" data-en="Clear Cart">إفراغ السلة</span>
+                        </button>
+                    </div>
+                    <div class="cart-items-list" id="cart-items-list"></div>
+                </div>
+
+                <!-- Summary column -->
+                <aside class="cart-summary-col">
+                    <div class="cart-summary-card">
+                        <h3 class="cart-summary-title" data-ar="ملخص الطلب" data-en="Order Summary">ملخص الطلب</h3>
+                        <div class="cart-summary-row">
+                            <span data-ar="عدد الأصناف" data-en="Distinct Items">عدد الأصناف</span>
+                            <span id="summary-distinct">0</span>
+                        </div>
+                        <div class="cart-summary-row">
+                            <span data-ar="إجمالي القطع" data-en="Total Quantity">إجمالي القطع</span>
+                            <span id="summary-total">0</span>
+                        </div>
+                        <div class="cart-summary-divider"></div>
+                        <div class="cart-summary-note">
+                            <i class="fas fa-info-circle"></i>
+                            <span data-ar="الأسعار تُحدد عند الطلب. اطلب عرض سعر وسيتواصل معك فريق دلتا بامب بأفضل الأسعار." data-en="Prices are set upon request. Request a quote and the Delta Pump team will contact you with the best prices.">الأسعار تُحدد عند الطلب. اطلب عرض سعر وسيتواصل معك فريق دلتا بامب بأفضل الأسعار.</span>
+                        </div>
+                        <a href="#" class="cart-quote-btn" id="cart-quote-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            <span data-ar="اطلب عرض سعر" data-en="Request a Quote">اطلب عرض سعر</span>
+                        </a>
+                        <a href="store.html" class="cart-continue-btn">
+                            <i class="fas fa-arrow-right"></i>
+                            <span data-ar="متابعة التسوق" data-en="Continue Shopping">متابعة التسوق</span>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Empty cart state -->
+            <div class="cart-empty" id="cart-empty" hidden>
+                <div class="cart-empty-icon"><i class="fas fa-shopping-bag"></i></div>
+                <h2 class="cart-empty-title" data-ar="سلة المشتريات فارغة" data-en="Your Cart is Empty">سلة المشتريات فارغة</h2>
+                <p class="cart-empty-text" data-ar="لم تقم بإضافة أي منتجات إلى سلتك بعد. تصفح متجرنا واختر ما يناسب مشروعك." data-en="You haven't added any products to your cart yet. Browse our store and choose what suits your project.">
+                    لم تقم بإضافة أي منتجات إلى سلتك بعد. تصفح متجرنا واختر ما يناسب مشروعك.
+                </p>
+                <a href="store.html" class="cart-empty-btn">
+                    <span data-ar="تصفح المتجر" data-en="Browse Store">تصفح المتجر</span>
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Delta Pump Logo" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-name" data-ar="دلتا بامب" data-en="Delta Pump">دلتا بامب</span>
+                            <span class="footer-logo-tagline" data-ar="للمقاولات العامة" data-en="General Contracting">للمقاولات العامة</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc" data-ar="دلتا بامب هي شركة مصرية رائدة متخصصة في حفر وصيانة وتأهيل آبار المياه الجوفية وتقديم حلول متكاملة للطاقة الشمسية. نفخر بتقديم خدمات عالية الجودة تعتمد على أحدث التقنيات والمعايير الهندسية لتلبية احتياجات عملائنا في مختلف أنحاء الجمهورية." data-en="Delta Pump is a leading Egyptian company specializing in drilling, maintaining and rehabilitating groundwater wells and providing integrated solar energy solutions. We pride ourselves on providing high-quality services based on the latest technologies and engineering standards to meet our clients' needs across the country.">
+                        دلتا بامب هي شركة مصرية رائدة متخصصة في حفر وصيانة وتأهيل آبار المياه الجوفية وتقديم حلول متكاملة للطاقة الشمسية. نفخر بتقديم خدمات عالية الجودة تعتمد على أحدث التقنيات والمعايير الهندسية لتلبية احتياجات عملائنا في مختلف أنحاء الجمهورية.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading" data-ar="روابط سريعة" data-en="Quick Links"><span class="heading-dot"></span>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                        <li><a href="services.html" data-ar="خدماتنا" data-en="Our Services">خدماتنا</a></li>
+                        <li><a href="projects.html" data-ar="مشاريعنا" data-en="Our Projects">مشاريعنا</a></li>
+                        <li><a href="store.html" data-ar="المتجر" data-en="Store">المتجر</a></li>
+                        <li><a href="contact.html" data-ar="اتصل بنا" data-en="Contact Us">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading" data-ar="الموقع" data-en="Location"><span class="heading-dot"></span>الموقع</h3>
+                    <div class="footer-contact-list">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-ar="المقر الرئيسي" data-en="Main Office">المقر الرئيسي</span>
+                                <p data-ar="الإسماعيلية، المحسمة القديمة" data-en="Ismailia, Old Mahsama">الإسماعيلية، المحسمة القديمة</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-ar="المقر الفرعي" data-en="Branch Office">المقر الفرعي</span>
+                                <p data-ar="المنيا، بجوار كوبري ملوي" data-en="Minya, next to Mallawi Bridge">المنيا، بجوار كوبري ملوي</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-heading" data-ar="اتصل بنا" data-en="Contact Us"><span class="heading-dot"></span>اتصل بنا</h3>
+                    <div class="footer-contact-list">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</span>
+                                <a href="tel:01154649393" dir="ltr">01154649393</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <span class="contact-label" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</span>
+                                <a href="mailto:deltapump@gmail.com" dir="ltr">deltapump@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="copyright" data-ar="© 2026 دلتا بامب للمقاولات العامة. جميع الحقوق محفوظة." data-en="© 2026 Delta Pump General Contracting. All rights reserved.">© 2026 دلتا بامب للمقاولات العامة. جميع الحقوق محفوظة.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#" data-ar="الشروط والأحكام" data-en="Terms & Conditions">الشروط والأحكام</a>
+                        <a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/201154649393" class="whatsapp-float" id="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/data/catalog-products.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
