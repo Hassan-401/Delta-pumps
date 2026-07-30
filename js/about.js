@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ============ SCROLL REVEAL FOR ABOUT PAGE ============
     const revealElements = document.querySelectorAll(
-        '.about-welcome-image, .about-welcome-content, .license-card, .distinguish-card, .about-stat, .about-hero-content, .licenses-header, .team-card, .value-card'
+        '.about-hero-content, .about-hero-visual, .strip-item, .about-welcome-content, .about-welcome-list, .checklist-item, .licenses-header, .license-card, .distinguish-card, .team-card, .value-card, .about-stat'
     );
 
     revealElements.forEach(el => {
