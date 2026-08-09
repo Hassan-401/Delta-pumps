@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
     const submitBtn = document.getElementById('form-submit');
 
+    // The form is delivered over WhatsApp: submitting composes the message and
+    // opens a chat with the company number, so no mail server is involved.
+    const WHATSAPP_NUMBER = '201040031792';
+
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -39,30 +43,60 @@ document.addEventListener('DOMContentLoaded', () => {
             const name = document.getElementById('contact-name').value.trim();
             const email = document.getElementById('contact-email').value.trim();
             const phone = document.getElementById('contact-phone').value.trim();
-            const subject = document.getElementById('contact-subject').value;
+            const subjectEl = document.getElementById('contact-subject');
+            const subject = subjectEl.value;
             const message = document.getElementById('contact-message').value.trim();
 
-            // Basic validation
-            if (!name || !email || !subject || !message) {
-                // Shake the button
-                submitBtn.style.animation = 'shake 0.4s ease';
-                setTimeout(() => {
-                    submitBtn.style.animation = '';
-                }, 400);
-                return;
-            }
-
-            // Success animation
             const btnSpan = submitBtn.querySelector('span');
             const btnIcon = submitBtn.querySelector('i');
             const originalText = btnSpan.textContent;
             const isArabic = document.documentElement.lang === 'ar';
+            const t = (ar, en) => (isArabic ? ar : en);
 
+            const shake = () => {
+                submitBtn.style.animation = 'shake 0.4s ease';
+                setTimeout(() => { submitBtn.style.animation = ''; }, 400);
+            };
+
+            // Basic validation
+            if (!name || !email || !subject || !message) {
+                shake();
+                return;
+            }
+
+            // Use the visible option label, not the raw value
+            const subjectText = subjectEl.options[subjectEl.selectedIndex]
+                ? subjectEl.options[subjectEl.selectedIndex].textContent.trim()
+                : subject;
+
+            // Compose the WhatsApp message
+            const lines = [
+                t('مرحباً، أرغب في التواصل معكم عبر موقع دلتا بامب.',
+                  'Hello, I would like to get in touch via the Delta Pump website.'),
+                '',
+                `*${t('الاسم', 'Name')}:* ${name}`,
+                `*${t('البريد الإلكتروني', 'Email')}:* ${email}`,
+                `*${t('رقم الهاتف', 'Phone')}:* ${phone || t('غير محدد', 'Not provided')}`,
+                `*${t('الموضوع', 'Subject')}:* ${subjectText}`,
+                '',
+                `*${t('الرسالة', 'Message')}:*`,
+                message
+            ];
+            const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
+
+            // Opened synchronously inside the click so the browser does not block it
+            const opened = window.open(url, '_blank', 'noopener,noreferrer');
+            if (!opened) {
+                // Pop-up blocked: fall back to navigating this tab
+                window.location.href = url;
+                return;
+            }
+
+            // Success state
             submitBtn.classList.add('success');
-            btnSpan.textContent = isArabic ? 'تم الإرسال بنجاح!' : 'Sent Successfully!';
-            btnIcon.className = 'fas fa-check';
+            btnSpan.textContent = t('تم فتح واتساب!', 'Opening WhatsApp!');
+            btnIcon.className = 'fab fa-whatsapp';
 
-            // Reset after 3 seconds
             setTimeout(() => {
                 submitBtn.classList.remove('success');
                 btnSpan.textContent = originalText;

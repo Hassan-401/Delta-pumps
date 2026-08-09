@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartLayout = document.getElementById('cart-layout');
     if (!cartLayout) return; // not the cart page
 
-    const WHATSAPP_NUMBER = '201154649393';
+    const WHATSAPP_NUMBER = '201040031792';
 
     const getLang = () => localStorage.getItem('deltapump_lang') || 'ar';
     const t = (ar, en) => (getLang() === 'en' ? en : ar);

@@ -476,6 +476,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* grid items default to min-width:auto, which would let the carousel
+       stretch this column past the viewport on phones */
+    min-width: 0;
 }
 
 .team-panel-title {
@@ -490,12 +493,17 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+    /* let the row shrink so the track (not the panel) takes the overflow */
+    min-width: 0;
 }
 
 .team-track {
     display: flex;
     gap: var(--spacing-md);
     flex: 1;
+    /* without this the track keeps its content width, overflowing the panel
+       on small screens and leaving nothing to scroll */
+    min-width: 0;
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;

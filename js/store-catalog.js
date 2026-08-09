@@ -133,9 +133,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 return btn;
             };
 
-            paginationEl.appendChild(makeBtn('«', currentPage - 1, { disabled: currentPage === 1 }));
+            const makeDots = () => {
+                const span = document.createElement('span');
+                span.className = 'pagination-dots';
+                span.textContent = '…';
+                return span;
+            };
+
+            // Show first + last page, the current page and its neighbours, and
+            // collapse everything else into ellipses: 1 … 6 7 8 … 14
+            const pages = [];
             for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || Math.abs(i - currentPage) <= 1) pages.push(i);
+            }
+
+            paginationEl.appendChild(makeBtn('«', currentPage - 1, { disabled: currentPage === 1 }));
+            let prev = 0;
+            for (const i of pages) {
+                if (prev && i - prev > 1) paginationEl.appendChild(makeDots());
                 paginationEl.appendChild(makeBtn(String(i), i, { active: i === currentPage }));
+                prev = i;
             }
             paginationEl.appendChild(makeBtn('»', currentPage + 1, { disabled: currentPage === totalPages }));
         };

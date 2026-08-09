@@ -524,7 +524,7 @@ const SERVICES_DATA = {
             en: 'Supply of Solar Inverters'
         },
         intro: {
-            ar: 'إذا كانت الألواح الشمسية هي القلب الذي يضخ الطاقة، فإن إنفرترات (عاكسات) الطاقة الشمسية هي "العقل المدبر" الذي يدير هذه المنظومة. فهي المسؤولة عن تحويل التيار المستمر (DC) إلى تيار متردد (AC) وتحسين كفاءة التشغيل، مما يجعلها المكون الأهم لنجاح محطات الري الزراعي والمشاريع الصناعية في مصر.',
+            ar: 'إذا كانت الألواح الشمسية هي القلب الذي يضخ الطاقة، فإن إنفرترات (إنفرترات) الطاقة الشمسية هي "العقل المدبر" الذي يدير هذه المنظومة. فهي المسؤولة عن تحويل التيار المستمر (DC) إلى تيار متردد (AC) وتحسين كفاءة التشغيل، مما يجعلها المكون الأهم لنجاح محطات الري الزراعي والمشاريع الصناعية في مصر.',
             en: 'If solar panels are the heart that pumps energy, solar inverters are the "mastermind" that manages the system. They convert direct current (DC) to alternating current (AC) and optimize operating efficiency, making them the most important component for the success of agricultural irrigation stations and industrial projects in Egypt.'
         },
         tip: {
@@ -565,7 +565,7 @@ const SERVICES_DATA = {
                 en: 'Choose the Mastermind of Your Station Now!'
             },
             text: {
-                ar: 'لا تترك كفاءة محطتك للصدفة. تصفح الآن مجموعتنا المختارة من أفضل الإنفرترات (العاكسات) ومغيرات السرعة، واطلع على المواصفات الفنية لتحديد القدرة المناسبة لحجم محطتك مباشرة من متجرنا.',
+                ar: 'لا تترك كفاءة محطتك للصدفة. تصفح الآن مجموعتنا المختارة من أفضل الإنفرترات (الإنفرترات) ومغيرات السرعة، واطلع على المواصفات الفنية لتحديد القدرة المناسبة لحجم محطتك مباشرة من متجرنا.',
                 en: 'Do not leave your station\'s efficiency to chance. Browse our curated collection of the best inverters and variable-speed drives, and check the technical specifications to determine the right capacity for your station directly from our store.'
             },
             links: [
@@ -631,7 +631,7 @@ const SERVICES_DATA = {
                 en: 'Browse Solar Energy Solutions in Our Store'
             },
             text: {
-                ar: 'بإمكانك الآن الاطلاع على مواصفات الألواح، العاكسات، والبطاريات، واختيار ما يناسب احتياجات محطتك الشمسية مباشرة من مكان واحد.',
+                ar: 'بإمكانك الآن الاطلاع على مواصفات الألواح، الإنفرترات، والبطاريات، واختيار ما يناسب احتياجات محطتك الشمسية مباشرة من مكان واحد.',
                 en: 'You can now view the specifications of panels, inverters, and batteries, and choose what suits your solar station needs directly from one place.'
             },
             links: [

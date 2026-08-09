@@ -191,7 +191,7 @@
     position: relative;
     height: 220px;
     overflow: hidden;
-    background: linear-gradient(135deg, #f4ede3 0%, #e9e0d2 100%);
+    background: var(--color-white);
     flex-shrink: 0;
 }
 
@@ -203,7 +203,7 @@
 .product-card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform var(--transition-slow);
 }
 
@@ -352,6 +352,19 @@
 .pagination-btn:disabled {
     opacity: 0.4;
     cursor: not-allowed;
+}
+
+.pagination-dots {
+    min-width: 22px;
+    height: 38px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 0.35rem;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 700;
+    user-select: none;
 }
 
 /* ============ PRODUCT DETAIL PAGE ============ */

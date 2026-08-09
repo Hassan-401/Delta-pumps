@@ -112,6 +112,7 @@
 
 /* Store Card */
 .store-card {
+    position: relative;
     background: var(--color-white);
     border-radius: var(--radius-xl);
     overflow: hidden;
@@ -120,6 +121,19 @@
     transition: all var(--transition-base);
     display: flex;
     flex-direction: column;
+}
+
+/* stretch the section link over the whole card so any part of it navigates.
+   the link must stay static so `inset: 0` resolves against .store-card */
+.store-card .btn-store-link {
+    position: static;
+}
+
+.store-card .btn-store-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
 
 .store-card:hover {
@@ -132,13 +146,13 @@
     position: relative;
     height: 240px;
     overflow: hidden;
-    background-color: var(--color-gray-100);
+    background-color: var(--color-white);
 }
 
 .store-card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform var(--transition-slow);
 }
 

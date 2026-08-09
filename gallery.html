@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="معرض أعمال دلتا بامب - صور وفيديوهات لمشاريع حفر الآبار، الطلمبات، الطاقة الشمسية وحلول المياه المتكاملة."
+    />
+    <title>معرض أعمالنا | دلتا بامب لطلمبات الأعماق وحفر الآبار</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+
+  <body>
+    <!-- ============ HEADER ============ -->
+    <header id="main-header" class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo" id="logo">
+            <img
+              src="assets/images/logo.png"
+              alt="Delta Pump Logo"
+              class="logo-img"
+            />
+            <div class="logo-text">
+              <span class="logo-name" data-ar="دلتا بامب" data-en="Delta Pump"
+                >دلتا بامب</span
+              >
+              <span
+                class="logo-tagline"
+                data-ar="لطلمبات الأعماق وحفر الأبار"
+                data-en="Deep Well Pumps & Well Drilling"
+                >لطلمبات الأعماق وحفر الأبار</span
+              >
+            </div>
+          </a>
+          <ul class="nav-links" id="nav-links">
+            <li>
+              <a
+                href="index.html"
+                class="nav-link"
+                data-ar="الرئيسية"
+                data-en="Home"
+                >الرئيسية</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="nav-link"
+                data-ar="من نحن"
+                data-en="About Us"
+                >من نحن</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="nav-link"
+                data-ar="خدماتنا"
+                data-en="Services"
+                >خدماتنا</a
+              >
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="nav-link"
+                data-ar="مشاريعنا"
+                data-en="Projects"
+                >مشاريعنا</a
+              >
+            </li>
+            <li>
+              <a
+                href="gallery.html"
+                class="nav-link active"
+                data-ar="المعرض"
+                data-en="Gallery"
+                >المعرض</a
+              >
+            </li>
+            <li>
+              <a
+                href="store.html"
+                class="nav-link"
+                data-ar="المتجر"
+                data-en="Store"
+                >المتجر</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="nav-link"
+                data-ar="اتصل بنا"
+                data-en="Contact"
+                >اتصل بنا</a
+              >
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <button class="cart-btn" id="cart-btn" aria-label="Shopping Cart">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="cart-count">0</span>
+            </button>
+            <button class="lang-btn" id="lang-toggle">
+              <span class="lang-text">English</span>
+              <i class="fas fa-globe"></i>
+            </button>
+            <button
+              class="mobile-toggle"
+              id="mobile-toggle"
+              aria-label="Toggle Menu"
+            >
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============ GALLERY HERO ============ -->
+    <section class="gallery-hero">
+      <div class="gallery-hero-bg"></div>
+      <div class="container">
+        <div class="gallery-hero-content">
+          <nav class="gallery-breadcrumb">
+            <a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+            <span class="sep">/</span>
+            <span class="current" data-ar="المعرض" data-en="Gallery"
+              >المعرض</span
+            >
+          </nav>
+          <h1
+            class="gallery-hero-title"
+            data-ar="معرض أعمالنا"
+            data-en="Our Work Gallery"
+          >
+            معرض أعمالنا
+          </h1>
+          <p
+            class="gallery-hero-subtitle"
+            data-ar="مجموعة من صور وفيديوهات لمشاريعنا في مجال حفر الآبار، الطلمبات، الطاقة الشمسية وحلول المياه المتكاملة."
+            data-en="A collection of photos and videos from our projects in well drilling, pumps, solar energy and integrated water solutions."
+          >
+            مجموعة من صور وفيديوهات لمشاريعنا في مجال حفر الآبار، الطلمبات،
+            الطاقة الشمسية وحلول المياه المتكاملة.
+          </p>
+          <div class="gallery-hero-underline"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FILTERS + GRID ============ -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-filters" id="gallery-filters">
+          <button
+            class="gallery-filter active"
+            data-filter="all"
+            data-ar="الكل"
+            data-en="All"
+          >
+            الكل
+          </button>
+          <button
+            class="gallery-filter"
+            data-filter="well"
+            data-ar="حفر الآبار"
+            data-en="Well Drilling"
+          >
+            حفر الآبار
+          </button>
+          <button
+            class="gallery-filter"
+            data-filter="solar"
+            data-ar="الطاقة الشمسية"
+            data-en="Solar Energy"
+          >
+            الطاقة الشمسية
+          </button>
+          <button
+            class="gallery-filter"
+            data-filter="supplies"
+            data-ar="التوريدات"
+            data-en="Supplies"
+          >
+            التوريدات
+          </button>
+          <button
+            class="gallery-filter"
+            data-filter="restoration"
+            data-ar="الصيانة والتشغيل"
+            data-en="Maintenance & Operation"
+          >
+            الصيانة والتشغيل
+          </button>
+          <button
+            class="gallery-filter"
+            data-filter="motors"
+            data-ar="المواتير والطلمبات"
+            data-en="Motors & Pumps"
+          >
+            المواتير والطلمبات
+          </button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <button
+            class="gallery-item"
+            data-cat="well"
+            data-index="0"
+            aria-label="حفر الآبار — دلتا بامب (1)"
+          >
+            <img
+              src="assets/images/gallery/well/well 1.webp"
+              alt="حفر الآبار — دلتا بامب (1)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="well"
+            data-index="1"
+            aria-label="حفر الآبار — دلتا بامب (2)"
+          >
+            <img
+              src="assets/images/gallery/well/well 2.webp"
+              alt="حفر الآبار — دلتا بامب (2)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="well"
+            data-index="2"
+            aria-label="حفر الآبار — دلتا بامب (3)"
+          >
+            <img
+              src="assets/images/gallery/well/well 3.webp"
+              alt="حفر الآبار — دلتا بامب (3)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="well"
+            data-index="3"
+            aria-label="حفر الآبار — دلتا بامب (4)"
+          >
+            <img
+              src="assets/images/gallery/well/well 4.webp"
+              alt="حفر الآبار — دلتا بامب (4)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="well"
+            data-index="4"
+            aria-label="حفر الآبار — دلتا بامب (5)"
+          >
+            <img
+              src="assets/images/gallery/well/well 5.webp"
+              alt="حفر الآبار — دلتا بامب (5)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="well"
+            data-index="5"
+            aria-label="حفر الآبار — دلتا بامب (6)"
+          >
+            <img
+              src="assets/images/gallery/well/well 6.webp"
+              alt="حفر الآبار — دلتا بامب (6)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="well"
+            data-index="6"
+            aria-label="حفر الآبار — دلتا بامب (7)"
+          >
+            <img
+              src="assets/images/gallery/well/well 7.webp"
+              alt="حفر الآبار — دلتا بامب (7)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="solar"
+            data-index="7"
+            aria-label="الطاقة الشمسية — دلتا بامب (1)"
+          >
+            <img
+              src="assets/images/gallery/solar panels/solar panel 1.jpg"
+              alt="الطاقة الشمسية — دلتا بامب (1)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="solar"
+            data-index="8"
+            aria-label="الطاقة الشمسية — دلتا بامب (2)"
+          >
+            <img
+              src="assets/images/gallery/solar panels/solar panel 2.jpg"
+              alt="الطاقة الشمسية — دلتا بامب (2)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="solar"
+            data-index="9"
+            aria-label="الطاقة الشمسية — دلتا بامب (3)"
+          >
+            <img
+              src="assets/images/gallery/solar panels/solar panel 3.jpeg"
+              alt="الطاقة الشمسية — دلتا بامب (3)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="solar"
+            data-index="10"
+            aria-label="الطاقة الشمسية — دلتا بامب (4)"
+          >
+            <img
+              src="assets/images/gallery/solar panels/solar panel 4.jpeg"
+              alt="الطاقة الشمسية — دلتا بامب (4)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="solar"
+            data-index="11"
+            aria-label="الطاقة الشمسية — دلتا بامب (5)"
+          >
+            <img
+              src="assets/images/gallery/solar panels/solar panel 5.jpeg"
+              alt="الطاقة الشمسية — دلتا بامب (5)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="solar"
+            data-index="12"
+            aria-label="الطاقة الشمسية — دلتا بامب (6)"
+          >
+            <img
+              src="assets/images/gallery/solar panels/solar panel 6.jpeg"
+              alt="الطاقة الشمسية — دلتا بامب (6)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="supplies"
+            data-index="13"
+            aria-label="التوريدات — دلتا بامب (1)"
+          >
+            <img
+              src="assets/images/gallery/supplies/supplie 1.jpg"
+              alt="التوريدات — دلتا بامب (1)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="supplies"
+            data-index="14"
+            aria-label="التوريدات — دلتا بامب (2)"
+          >
+            <img
+              src="assets/images/gallery/supplies/supplie 2.jpeg"
+              alt="التوريدات — دلتا بامب (2)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="supplies"
+            data-index="15"
+            aria-label="التوريدات — دلتا بامب (3)"
+          >
+            <img
+              src="assets/images/gallery/supplies/supplie 3.jpeg"
+              alt="التوريدات — دلتا بامب (3)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="supplies"
+            data-index="16"
+            aria-label="التوريدات — دلتا بامب (4)"
+          >
+            <img
+              src="assets/images/gallery/supplies/supplie 4.jpeg"
+              alt="التوريدات — دلتا بامب (4)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="restoration"
+            data-index="17"
+            aria-label="الصيانة والتشغيل — دلتا بامب (1)"
+          >
+            <img
+              src="assets/images/gallery/restoration/repair 1.jpg"
+              alt="الصيانة والتشغيل — دلتا بامب (1)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="restoration"
+            data-index="18"
+            aria-label="الصيانة والتشغيل — دلتا بامب (2)"
+          >
+            <img
+              src="assets/images/gallery/restoration/repair 2.jpeg"
+              alt="الصيانة والتشغيل — دلتا بامب (2)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="restoration"
+            data-index="19"
+            aria-label="الصيانة والتشغيل — دلتا بامب (3)"
+          >
+            <img
+              src="assets/images/gallery/restoration/repair 3.jpg"
+              alt="الصيانة والتشغيل — دلتا بامب (3)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="restoration"
+            data-index="20"
+            aria-label="الصيانة والتشغيل — دلتا بامب (4)"
+          >
+            <img
+              src="assets/images/gallery/restoration/repair 4.jpeg"
+              alt="الصيانة والتشغيل — دلتا بامب (4)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="restoration"
+            data-index="21"
+            aria-label="الصيانة والتشغيل — دلتا بامب (5)"
+          >
+            <img
+              src="assets/images/gallery/restoration/repair 5.jpeg"
+              alt="الصيانة والتشغيل — دلتا بامب (5)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="restoration"
+            data-index="22"
+            aria-label="الصيانة والتشغيل — دلتا بامب (6)"
+          >
+            <img
+              src="assets/images/gallery/restoration/repair 6.jpeg"
+              alt="الصيانة والتشغيل — دلتا بامب (6)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="motors"
+            data-index="23"
+            aria-label="المواتير والطلمبات — دلتا بامب (1)"
+          >
+            <img
+              src="assets/images/gallery/motors/motor 1.webp"
+              alt="المواتير والطلمبات — دلتا بامب (1)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="motors"
+            data-index="24"
+            aria-label="المواتير والطلمبات — دلتا بامب (2)"
+          >
+            <img
+              src="assets/images/gallery/motors/motor 2.webp"
+              alt="المواتير والطلمبات — دلتا بامب (2)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="motors"
+            data-index="25"
+            aria-label="المواتير والطلمبات — دلتا بامب (3)"
+          >
+            <img
+              src="assets/images/gallery/motors/motor 3.jpg"
+              alt="المواتير والطلمبات — دلتا بامب (3)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="motors"
+            data-index="26"
+            aria-label="المواتير والطلمبات — دلتا بامب (4)"
+          >
+            <img
+              src="assets/images/gallery/motors/motor 4.jpg"
+              alt="المواتير والطلمبات — دلتا بامب (4)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="motors"
+            data-index="27"
+            aria-label="المواتير والطلمبات — دلتا بامب (5)"
+          >
+            <img
+              src="assets/images/gallery/motors/motor 5.jpeg"
+              alt="المواتير والطلمبات — دلتا بامب (5)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="motors"
+            data-index="28"
+            aria-label="المواتير والطلمبات — دلتا بامب (6)"
+          >
+            <img
+              src="assets/images/gallery/motors/motor 6.jpeg"
+              alt="المواتير والطلمبات — دلتا بامب (6)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+          <button
+            class="gallery-item"
+            data-cat="motors"
+            data-index="29"
+            aria-label="المواتير والطلمبات — دلتا بامب (7)"
+          >
+            <img
+              src="assets/images/gallery/motors/motor 7.webp"
+              alt="المواتير والطلمبات — دلتا بامب (7)"
+              loading="lazy"
+            />
+            <span class="gallery-item-zoom"
+              ><i class="fas fa-magnifying-glass-plus"></i
+            ></span>
+          </button>
+        </div>
+
+        <div class="gallery-more-wrap">
+          <button class="btn-gallery-more" id="gallery-more">
+            <span data-ar="عرض المزيد" data-en="Show More">عرض المزيد</span>
+            <i class="fas fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VIDEOS ============ -->
+    <section class="gallery-videos-section">
+      <div class="container">
+        <div class="gallery-section-header">
+          <h2
+            class="gallery-section-title"
+            data-ar="فيديوهات المشاريع"
+            data-en="Project Videos"
+          >
+            فيديوهات المشاريع
+          </h2>
+          <div class="gallery-title-underline"></div>
+        </div>
+
+        <div class="gallery-videos-grid">
+          <article class="video-card">
+            <button
+              class="video-thumb"
+              data-reel="1138302197683702"
+              data-url="https://www.facebook.com/reel/1138302197683702"
+              aria-label="من أعمال دلتا بامب — فيديو 2"
+            >
+              <img
+                src="assets/images/gallery/well/well 1.webp"
+                alt="من أعمال دلتا بامب — فيديو 2"
+                loading="lazy"
+              />
+              <span class="video-play"><i class="fas fa-play"></i></span>
+            </button>
+            <div class="video-body">
+              <h3
+                id="video2"
+                class="video-title"
+                data-ar="من أعمال دلتا بامب "
+                data-en="Delta Pump at work — Video 2"
+              >
+                من أعمال دلتا بامب
+              </h3>
+              <a
+                class="video-link"
+                href="https://www.facebook.com/reel/1138302197683702"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook"></i>
+                <span data-ar="مشاهدة على فيسبوك" data-en="Watch on Facebook"
+                  >مشاهدة على فيسبوك</span
+                >
+              </a>
+            </div>
+          </article>
+          <article class="video-card">
+            <button
+              class="video-thumb"
+              data-reel="28409910628624316"
+              data-url="https://www.facebook.com/reel/28409910628624316"
+              aria-label="من أعمال دلتا بامب — فيديو 3"
+            >
+              <img
+                src="assets/images/gallery/restoration/repair 1.jpg"
+                alt="من أعمال دلتا بامب"
+                loading="lazy"
+              />
+              <span class="video-play"><i class="fas fa-play"></i></span>
+            </button>
+            <div class="video-body">
+              <h3
+                class="video-title"
+                data-ar="من أعمال دلتا بامب"
+                data-en="Delta Pump at work — Video 3"
+              >
+                من أعمال دلتا بامب
+              </h3>
+              <a
+                class="video-link"
+                href="https://www.facebook.com/reel/28409910628624316"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook"></i>
+                <span data-ar="مشاهدة على فيسبوك" data-en="Watch on Facebook"
+                  >مشاهدة على فيسبوك</span
+                >
+              </a>
+            </div>
+          </article>
+          <article class="video-card">
+            <button
+              class="video-thumb"
+              data-reel="2145580065859392"
+              data-url="https://www.facebook.com/reel/2145580065859392"
+              aria-label="من أعمال دلتا بامب"
+            >
+              <img
+                src="assets/images/gallery/motors/motor 1.webp"
+                alt="من أعمال دلتا بامب"
+                loading="lazy"
+              />
+              <span class="video-play"><i class="fas fa-play"></i></span>
+            </button>
+            <div class="video-body">
+              <h3
+                class="video-title"
+                data-ar="من أعمال دلتا بامب"
+                data-en="Delta Pump at work — Video 4"
+              >
+                من أعمال دلتا بامب
+              </h3>
+              <a
+                class="video-link"
+                href="https://www.facebook.com/reel/2145580065859392"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook"></i>
+                <span data-ar="مشاهدة على فيسبوك" data-en="Watch on Facebook"
+                  >مشاهدة على فيسبوك</span
+                >
+              </a>
+            </div>
+          </article>
+          <article class="video-card">
+            <button
+              class="video-thumb"
+              data-reel="1270680004087315"
+              data-url="https://www.facebook.com/reel/1270680004087315"
+              aria-label="من أعمال دلتا بامب"
+            >
+              <img
+                src="assets/images/gallery/supplies/supplie 1.jpg"
+                alt="من أعمال دلتا بامب "
+                loading="lazy"
+              />
+              <span class="video-play"><i class="fas fa-play"></i></span>
+            </button>
+            <div class="video-body">
+              <h3
+                class="video-title"
+                data-ar="من أعمال دلتا بامب"
+                data-en="Delta Pump at work — Video 5"
+              >
+                من أعمال دلتا بامب
+              </h3>
+              <a
+                class="video-link"
+                href="https://www.facebook.com/reel/1270680004087315"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook"></i>
+                <span data-ar="مشاهدة على فيسبوك" data-en="Watch on Facebook"
+                  >مشاهدة على فيسبوك</span
+                >
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / AFTER ============ -->
+    <section class="gallery-ba-section">
+      <div class="container">
+        <div class="gallery-section-header">
+          <h2
+            class="gallery-section-title"
+            data-ar="قبل وبعد"
+            data-en="Before & After"
+          >
+            قبل وبعد
+          </h2>
+          <div class="gallery-title-underline"></div>
+        </div>
+
+        <div class="gallery-ba-grid">
+          <div class="ba-card">
+            <div class="ba-compare" data-ba="0">
+              <img
+                class="ba-after"
+                src="assets/images/gallery/before and after/after 1.jpg"
+                alt="بعد"
+                loading="lazy"
+              />
+              <div class="ba-before-wrap">
+                <img
+                  class="ba-before"
+                  src="assets/images/gallery/before and after/before 1.jpg"
+                  alt="قبل"
+                  loading="lazy"
+                />
+              </div>
+              <span class="ba-tag ba-tag-before" data-ar="قبل" data-en="Before"
+                >قبل</span
+              >
+              <span class="ba-tag ba-tag-after" data-ar="بعد" data-en="After"
+                >بعد</span
+              >
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="before after slider"
+              />
+              <span class="ba-handle"><i class="fas fa-left-right"></i></span>
+            </div>
+          </div>
+          <div class="ba-card">
+            <div class="ba-compare" data-ba="1">
+              <img
+                class="ba-after"
+                src="assets/images/gallery/before and after/after 2.jpg"
+                alt="بعد"
+                loading="lazy"
+              />
+              <div class="ba-before-wrap">
+                <img
+                  class="ba-before"
+                  src="assets/images/gallery/before and after/before 2.jpeg"
+                  alt="قبل"
+                  loading="lazy"
+                />
+              </div>
+              <span class="ba-tag ba-tag-before" data-ar="قبل" data-en="Before"
+                >قبل</span
+              >
+              <span class="ba-tag ba-tag-after" data-ar="بعد" data-en="After"
+                >بعد</span
+              >
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="before after slider"
+              />
+              <span class="ba-handle"><i class="fas fa-left-right"></i></span>
+            </div>
+          </div>
+          <div class="ba-card">
+            <div class="ba-compare" data-ba="2">
+              <img
+                class="ba-after"
+                src="assets/images/gallery/before and after/after 3.webp"
+                alt="بعد"
+                loading="lazy"
+              />
+              <div class="ba-before-wrap">
+                <img
+                  class="ba-before"
+                  src="assets/images/gallery/before and after/before 3.jpeg"
+                  alt="قبل"
+                  loading="lazy"
+                />
+              </div>
+              <span class="ba-tag ba-tag-before" data-ar="قبل" data-en="Before"
+                >قبل</span
+              >
+              <span class="ba-tag ba-tag-after" data-ar="بعد" data-en="After"
+                >بعد</span
+              >
+              <input
+                class="ba-range"
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="before after slider"
+              />
+              <span class="ba-handle"><i class="fas fa-left-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="gallery-cta-section">
+      <div class="container">
+        <div class="gallery-cta">
+          <div class="gallery-cta-text">
+            <h2
+              data-ar="هل تبحث عن حلول متكاملة لمشروعك؟"
+              data-en="Looking for integrated solutions for your project?"
+            >
+              هل تبحث عن حلول متكاملة لمشروعك؟
+            </h2>
+            <p
+              data-ar="نحن هنا لمساعدتك في تنفيذ مشروعك باحترافية وجودة عالية."
+              data-en="We are here to help you deliver your project professionally and to a high standard."
+            >
+              نحن هنا لمساعدتك في تنفيذ مشروعك باحترافية وجودة عالية.
+            </p>
+          </div>
+          <a href="contact.html" class="btn-gallery-cta">
+            <span data-ar="اطلب عرض سعر" data-en="Request a Quote"
+              >اطلب عرض سعر</span
+            >
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div
+      class="gallery-lightbox"
+      id="gallery-lightbox"
+      role="dialog"
+      aria-modal="true"
+      hidden
+    >
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+        <i class="fas fa-xmark"></i>
+      </button>
+      <button
+        class="lightbox-nav lightbox-prev"
+        id="lightbox-prev"
+        aria-label="Previous"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <button
+        class="lightbox-nav lightbox-next"
+        id="lightbox-next"
+        aria-label="Next"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="lightbox-stage" id="lightbox-stage"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col footer-about">
+            <a href="index.html" class="footer-logo">
+              <img
+                src="assets/images/logo.png"
+                alt="Delta Pump Logo"
+                class="footer-logo-img"
+              />
+              <div class="footer-logo-text">
+                <span
+                  class="footer-logo-name"
+                  data-ar="دلتا بامب"
+                  data-en="Delta Pump"
+                  >دلتا بامب</span
+                >
+                <span
+                  class="footer-logo-tagline"
+                  data-ar="لطلمبات الأعماق وحفر الأبار"
+                  data-en="Deep Well Pumps & Well Drilling"
+                  >لطلمبات الأعماق وحفر الأبار</span
+                >
+              </div>
+            </a>
+            <p
+              class="footer-desc"
+              data-ar="دلتا بامب هي شركة مصرية رائدة متخصصة في حفر وصيانة وتأهيل آبار المياه الجوفية وتقديم حلول متكاملة للطاقة الشمسية. نفخر بتقديم خدمات عالية الجودة تعتمد على أحدث التقنيات والمعايير الهندسية لتلبية احتياجات عملائنا في مختلف أنحاء الجمهورية."
+              data-en="Delta Pump is a leading Egyptian company specializing in drilling, maintaining and rehabilitating groundwater wells and providing integrated solar energy solutions. We pride ourselves on providing high-quality services based on the latest technologies and engineering standards to meet our clients' needs across the country."
+            >
+              دلتا بامب هي شركة مصرية رائدة متخصصة في حفر وصيانة وتأهيل آبار
+              المياه الجوفية وتقديم حلول متكاملة للطاقة الشمسية. نفخر بتقديم
+              خدمات عالية الجودة تعتمد على أحدث التقنيات والمعايير الهندسية
+              لتلبية احتياجات عملائنا في مختلف أنحاء الجمهورية.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/profile.php?id=61563485170555" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="X (Twitter)"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3
+              class="footer-heading"
+              data-ar="روابط سريعة"
+              data-en="Quick Links"
+            >
+              <span class="heading-dot"></span>روابط سريعة
+            </h3>
+            <ul class="footer-links">
+              <li>
+                <a href="about.html" data-ar="من نحن" data-en="About Us"
+                  >من نحن</a
+                >
+              </li>
+              <li>
+                <a href="services.html" data-ar="خدماتنا" data-en="Our Services"
+                  >خدماتنا</a
+                >
+              </li>
+              <li>
+                <a
+                  href="projects.html"
+                  data-ar="مشاريعنا"
+                  data-en="Our Projects"
+                  >مشاريعنا</a
+                >
+              </li>
+              <li>
+                <a href="store.html" data-ar="المتجر" data-en="Store">المتجر</a>
+              </li>
+              <li>
+                <a href="contact.html" data-ar="اتصل بنا" data-en="Contact Us"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading" data-ar="الموقع" data-en="Location">
+              <span class="heading-dot"></span>الموقع
+            </h3>
+            <div class="footer-contact-list">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <span
+                    class="contact-label"
+                    data-ar="المقر الرئيسي"
+                    data-en="Main Office"
+                    >المقر الرئيسي</span
+                  >
+                  <p
+                    data-ar="الإسماعيلية - القصاصين - المحسمة القديمة"
+                    data-en="Ismailia - El Qassasin - Old Mahsama"
+                  >
+                    الإسماعيلية - القصاصين - المحسمة القديمة
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <span
+                    class="contact-label"
+                    data-ar="المقر الفرعي"
+                    data-en="Branch Office"
+                    >المقر الفرعي</span
+                  >
+                  <p
+                    data-ar="المنيا - كوبري ملوي - طريق أسيوط الغربي"
+                    data-en="Minya - Mallawi Bridge - Western Assiut Road"
+                  >
+                    المنيا - كوبري ملوي - طريق أسيوط الغربي
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <span
+                    class="contact-label"
+                    data-ar="فرع الجيزة"
+                    data-en="Giza Branch"
+                    >فرع الجيزة</span
+                  >
+                  <p
+                    data-ar="الجيزة - طريق المناشي - الخطاطبة - نكلا"
+                    data-en="Giza - El Manashi Road - El Khatatba - Nekla"
+                  >
+                    الجيزة - طريق المناشي - الخطاطبة - نكلا
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading" data-ar="اتصل بنا" data-en="Contact Us">
+              <span class="heading-dot"></span>اتصل بنا
+            </h3>
+            <div class="footer-contact-list">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="contact-text">
+                  <span
+                    class="contact-label"
+                    data-ar="رقم الهاتف"
+                    data-en="Phone Number"
+                    >رقم الهاتف</span
+                  >
+                  <a href="tel:01040031792" dir="ltr">01040031792</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-text">
+                  <span
+                    class="contact-label"
+                    data-ar="البريد الإلكتروني"
+                    data-en="Email"
+                    >البريد الإلكتروني</span
+                  >
+                  <a href="mailto:deltapump@gmail.com" dir="ltr"
+                    >deltapump@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <p
+              class="copyright"
+              data-ar="© 2026 دلتا بامب للمقاولات العامة. جميع الحقوق محفوظة."
+              data-en="© 2026 Delta Pump General Contracting. All rights reserved."
+            >
+              © 2026 دلتا بامب للمقاولات العامة. جميع الحقوق محفوظة.
+            </p>
+            <div class="footer-bottom-links">
+              <a href="#" data-ar="الشروط والأحكام" data-en="Terms & Conditions"
+                >الشروط والأحكام</a
+              >
+              <a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy"
+                >سياسة الخصوصية</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp -->
+
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

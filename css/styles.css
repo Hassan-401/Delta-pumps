@@ -992,11 +992,13 @@ button {
   border-color: rgba(227, 30, 36, 0.2);
 }
 
+/* box matches the artwork's 390x220 ratio, so the image fills it edge to edge
+   with nothing cropped and no empty space */
 .service-image {
   position: relative;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 390 / 220;
   overflow: hidden;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-white);
 }
 
 .service-image img {
