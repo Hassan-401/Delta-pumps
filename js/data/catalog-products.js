@@ -13,7 +13,7 @@ window.CATALOG_SECTIONS = [
     descAr: "الطاقة الشمسية ومشتملاتها",
     descEn: "Solar energy and its components",
     image: "assets/images/services/الواح الطاقه الشمسيه.webp",
-    url: "store-solar.html",
+    url: "/store-solar",
   },
   {
     id: "pumps",
@@ -23,7 +23,7 @@ window.CATALOG_SECTIONS = [
     descAr: "كل ما يتعلق بمشتملات طلمبات الاعماق",
     descEn: "Everything related to deep pumps accessories",
     image: "assets/images/services/توريد طلمبات.webp",
-    url: "store-pumps.html",
+    url: "/store-pumps",
   },
   {
     id: "iron-pipes-wells",
@@ -34,7 +34,7 @@ window.CATALOG_SECTIONS = [
     descEn:
       "Everything related to drilling pipes, pump pipes, and seamless pipes",
     image: "assets/images/services/توريد مواسير.webp",
-    url: "store-ironpipes.html",
+    url: "/store-ironpipes",
   },
 ];
 

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/index", "destination": "/", "permanent": true },
+    { "source": "/about.html", "destination": "/about", "permanent": true },
+    { "source": "/services.html", "destination": "/services", "permanent": true },
+    { "source": "/service.html", "destination": "/service", "permanent": true },
+    { "source": "/projects.html", "destination": "/projects", "permanent": true },
+    { "source": "/gallery.html", "destination": "/gallery", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/store.html", "destination": "/store", "permanent": true },
+    { "source": "/store-solar.html", "destination": "/store-solar", "permanent": true },
+    { "source": "/store-pumps.html", "destination": "/store-pumps", "permanent": true },
+    { "source": "/store-ironpipes.html", "destination": "/store-ironpipes", "permanent": true },
+    { "source": "/store-listing.html", "destination": "/store-listing", "permanent": true },
+    { "source": "/product.html", "destination": "/product", "permanent": true },
+    { "source": "/cart.html", "destination": "/cart", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/service", "destination": "/service.html" },
+    { "source": "/projects", "destination": "/projects.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/store", "destination": "/store.html" },
+    { "source": "/store-solar", "destination": "/store-solar.html" },
+    { "source": "/store-pumps", "destination": "/store-pumps.html" },
+    { "source": "/store-ironpipes", "destination": "/store-ironpipes.html" },
+    { "source": "/store-listing", "destination": "/store-listing.html" },
+    { "source": "/product", "destination": "/product.html" },
+    { "source": "/cart", "destination": "/cart.html" },
+    { "source": "/:page([A-Za-z0-9_-]+)", "destination": "/:page.html" }
+  ]
+}

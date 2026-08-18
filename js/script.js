@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.DeltaPumpCart.syncBadge();
     const cartBtn = document.getElementById('cart-btn');
     if (cartBtn) {
-        cartBtn.addEventListener('click', () => { window.location.href = 'cart.html'; });
+        cartBtn.addEventListener('click', () => { window.location.href = '/cart'; });
     }
 
     // ============ HEADER SCROLL EFFECT ============

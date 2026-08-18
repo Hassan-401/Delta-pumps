@@ -1,6 +1,6 @@
 /* ============================================
    DELTA PUMP - Shopping Cart Page Logic
-   Renders cart.html from window.DeltaPumpCart (defined in script.js)
+   Renders /cart from window.DeltaPumpCart (defined in script.js)
    and resolves line items against js/data/catalog-products.js.
    ============================================ */
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const row = document.createElement('div');
         row.className = 'cart-item';
         const name = t(product.nameAr, product.nameEn);
-        const productUrl = `product.html?id=${encodeURIComponent(product.id)}`;
+        const productUrl = `/product?id=${encodeURIComponent(product.id)}`;
 
         row.innerHTML = `
             <a class="cart-item-image" href="${productUrl}">

@@ -1,7 +1,7 @@
 /* ============================================
    DELTA PUMP - Store Catalog Logic
-   Drives: category listing page (store-listing.html)
-           product detail page (product.html)
+   Drives: category listing page (/store-listing)
+           product detail page (/product)
    Reads product data from js/data/catalog-products.js
    ============================================ */
 
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             card.addEventListener('click', () => {
-                window.location.href = `product.html?id=${encodeURIComponent(product.id)}`;
+                window.location.href = `/product?id=${encodeURIComponent(product.id)}`;
             });
             card.querySelector('.product-card-add-btn').addEventListener('click', (e) => {
                 e.stopPropagation();
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (category) {
                 breadcrumbSubcategory.textContent = t(category.nameAr, category.nameEn);
-                breadcrumbSubcategory.href = `store-listing.html?category=${encodeURIComponent(category.id)}`;
+                breadcrumbSubcategory.href = `/store-listing?category=${encodeURIComponent(category.id)}`;
             }
             breadcrumbProduct.textContent = name;
 

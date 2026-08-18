@@ -1,6 +1,6 @@
 /* ============================================
    DELTA PUMP - Services Detail Data
-   Content for service.html?service=<slug>
+   Content for /service?service=<slug>
    Each text value has { ar, en } for the
    global language toggle.
    ============================================ */
@@ -69,13 +69,13 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-droplet',
-                    href: 'store-listing.html?category=pumps',
+                    href: '/store-listing?category=pumps',
                     ar: 'اضغط هنا لتصفح وشراء طلمبات الأعماق (Pumps) من متجر دلتا بامب',
                     en: 'Click here to browse and buy deep pumps from the Delta Pump store'
                 },
                 {
                     icon: 'fas fa-bolt',
-                    href: 'store-listing.html?category=motors',
+                    href: '/store-listing?category=motors',
                     ar: 'اضغط هنا لتصفح وشراء مواتير الغواطس (Motors) من متجر دلتا بامب',
                     en: 'Click here to browse and buy submersible motors from the Delta Pump store'
                 }
@@ -148,7 +148,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-droplet',
-                    href: 'store-listing.html?category=pumps',
+                    href: '/store-listing?category=pumps',
                     ar: 'اضغط هنا لتصفح وشراء طلمبات الأعماق من متجر دلتا بامب',
                     en: 'Click here to browse and buy deep pumps from the Delta Pump store'
                 }
@@ -335,7 +335,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-store',
-                    href: 'store.html',
+                    href: '/store',
                     ar: 'اضغط هنا لتصفح مستلزمات الآبار الكاملة من متجر دلتا بامب',
                     en: 'Click here to browse the complete well supplies from the Delta Pump store'
                 }
@@ -419,7 +419,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-store',
-                    href: 'store.html',
+                    href: '/store',
                     ar: 'تصفح متجر دلتا بامب الشامل للمعدات المائية والطاقة الشمسية',
                     en: 'Browse the comprehensive Delta Pump store for water and solar equipment'
                 }
@@ -502,13 +502,13 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-droplet',
-                    href: 'store-listing.html?category=pumps',
+                    href: '/store-listing?category=pumps',
                     ar: 'اضغط هنا لتصفح وشراء طلمبات الأعماق من متجر دلتا بامب',
                     en: 'Click here to browse and buy deep pumps from the Delta Pump store'
                 },
                 {
                     icon: 'fas fa-bolt',
-                    href: 'store-listing.html?category=motors',
+                    href: '/store-listing?category=motors',
                     ar: 'اضغط هنا لتصفح وشراء مواتير الغواطس من متجر دلتا بامب',
                     en: 'Click here to browse and buy submersible motors from the Delta Pump store'
                 }
@@ -571,7 +571,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-bolt',
-                    href: 'store-listing.html?category=inverters',
+                    href: '/store-listing?category=inverters',
                     ar: 'اضغط هنا لتصفح وشراء إنفرترات الطاقة الشمسية من متجر دلتا بامب',
                     en: 'Click here to browse and buy solar inverters from the Delta Pump store'
                 }
@@ -637,7 +637,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-solar-panel',
-                    href: 'store-solar.html',
+                    href: '/store-solar',
                     ar: 'اضغط هنا لتصفح قسم الطاقة الشمسية المتكامل في متجر دلتا بامب',
                     en: 'Click here to browse the complete solar energy section in the Delta Pump store'
                 }
@@ -716,7 +716,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-industry',
-                    href: 'store-listing.html?category=iron-pipes',
+                    href: '/store-listing?category=iron-pipes',
                     ar: 'اضغط هنا لتصفح وشراء مواسير الآبار من متجر دلتا بامب',
                     en: 'Click here to browse and buy well pipes from the Delta Pump store'
                 }
@@ -795,7 +795,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-grip-lines',
-                    href: 'store-listing.html?category=pipes',
+                    href: '/store-listing?category=pipes',
                     ar: 'اضغط هنا لتصفح وشراء مواسير UPVC من متجر دلتا بامب',
                     en: 'Click here to browse and buy UPVC pipes from the Delta Pump store'
                 }
@@ -878,7 +878,7 @@ const SERVICES_DATA = {
             links: [
                 {
                     icon: 'fas fa-plug',
-                    href: 'store-listing.html?category=cables',
+                    href: '/store-listing?category=cables',
                     ar: 'اضغط هنا لتصفح وشراء كابلات طلمبات الأعماق من متجر دلتا بامب',
                     en: 'Click here to browse and buy deep pump cables from the Delta Pump store'
                 }

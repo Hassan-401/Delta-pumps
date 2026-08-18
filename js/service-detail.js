@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Unknown or missing service -> back to the services list
     if (!service) {
-        window.location.replace('services.html');
+        window.location.replace('/services');
         return;
     }
 
